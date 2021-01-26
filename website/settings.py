@@ -27,6 +27,7 @@ DEBUG = os.environ.get("DEBUG") or False  # Set to False if = ''
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
+SITE_ID = 1
 
 # Application definition
 
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'blog.apps.BlogConfig',
     'taggit',
 ]
